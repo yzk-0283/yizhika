@@ -1,0 +1,119 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(1) .logo {
+    animation: logo-spin infinite 100s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.index {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  /* background: #f7f7f7; */
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: calc(100% - 66px);
+  overflow: auto;
+}
+
+.card button {
+  width: 88px;
+  height: 35px;
+  color: #ffffff;
+  border: none;
+  background-color: #8bc34a;
+}
+
+.action-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 9px 24px;
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.custom-btn-item {
+  --font-color: #494f57;
+  --font-active-color: #494f57;
+  --background-color: #ffffff;
+  --background-active-color: #ffffff;
+  --multiple: 0.9;
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #00bd77;
+}
+.custom-button .icon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+
+  font-size: 24px;
+  color: #fff;
+}
+
+.custom-text {
+  max-width: 72px;
+  margin: 4px 0 0;
+  overflow: hidden;
+  font-size: 13px;
+  color: #494f57;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
